@@ -1,0 +1,82 @@
+
+ SOL COMMENT
+
+Numeric Data Types
+Used for numbers.
+INT – Whole numbers (e.g., 1, 20, -5)
+BIGINT – Large whole numbers
+SMALLINT / TINYINT – Smaller number ranges
+DECIMAL(p, q) – Exact decimal values (money values)
+NUMERIC(p, q) – Same as DECIMAL
+FLOAT – Approximate decimal value
+REAL / DOUBLE – Larger floating-point numbers
+
+
+String / Text Data Types
+Used for storing text/characters.
+CHAR(n) – Fixed-length text
+VARCHAR(n) – Variable-length text (most used)
+TEXT – Long text values
+NVARCHAR(n) – Unicode text (multi-language)
+NTEXT – Long Unicode text 
+
+Date & Time Data Types
+Used for dates and ties.
+DATE – YYYY-MM-DD only
+TIME – HH:MM:SS only
+DATETIME – Date + time
+TIMESTAMP – Auto-updated time value
+DATETIME2 – More precise datetime
+YEAR – Stores year value
+
+
+Binary Data Types
+Used for storing files/images.
+BINARY(n) – Fixed-length binary data
+VARBINARY(n) – Variable binary data
+BLOB – Large binary objects (images, videos)
+
+
+Special Data Types
+ENUM – Choose from predefined values
+SET – Multiple values from a list
+UUID – Unique identifiers
+GEOMETRY – Spatial data (locations, coordinates)
+
+
+ Numeric: INT, BIGINT, SMALLINT, TINYINT, DECIMAL, NUMERIC, FLOAT, DOUBLE
+-- String: CHAR, VARCHAR, TEXT, NVARCHAR, NTEXT
+-- Date/Time: DATE, TIME, DATETIME, TIMESTAMP, YEAR
+-- Binary: BINARY, VARBINARY, BLOB
+-- Boolean: BOOLEAN, BIT
+-- JSON/XML: JSON, XML
+-- Special: ENUM, SET, UUID, GEOMETRY
+
+2. what all the constrain in sql?
+
+. PRIMARY KEY
+Uniquely identifies each row
+Cannot be NULL
+Only one primary key per table
+
+FOREIGN KEY
+Links two tables
+Ensures referenced value exists in parent table
+FOREIGN KEY
+
+UNIQUE
+Prevents duplicate values in a column
+Allows NULL (but only one NULL depending on DB)
+
+NOT NULL
+Column must have a value
+Cannot be empty
+
+PRIMARY KEY: Unique + Not Null, identifies each row
+-- FOREIGN KEY: Links tables, maintains referential integrity
+-- UNIQUE: No duplicate values allowed
+-- NOT NULL: Column must have a value
+-- CHECK: Condition must be true (Age > 18)
+-- DEFAULT: Auto-assign default value
+-- INDEX: Speeds up searching (not a constraint)
+-- AUTO_INCREMENT / IDENTITY: Auto-generated numbers
